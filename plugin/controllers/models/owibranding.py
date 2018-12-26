@@ -406,6 +406,9 @@ def getAllInfo():
 		elif procmodel.startswith("sf"):
 			brand = "Octagon"
 			model = procmodel
+		elif procmodel =="sf8008":
+			brand ="Octagon"
+			model = "sf8008"	
 		elif procmodel == "e4hd":
 			brand = "Axas"
 			model = "E4HD"
@@ -621,7 +624,9 @@ def getAllInfo():
 		remote = "vs1x00"
 	elif procmodel in ("e4hd"):
 		remote = "e4hd"
-
+	elif procmodel == "sf8008":
+		remote = "sf8008"
+		
 	info['remote'] = remote
 
 	kernel = about.getKernelVersionString()[0]
